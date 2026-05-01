@@ -10,7 +10,7 @@ const config = {
 		    assets: "docs"
 		}),
 		paths: {
-			base: isDev ? '' : '/janeswalkmap'
+			base: isDev ? '' : '/janeswalk'
 		},
 		prerender: {
 			entries: ['/', '*']
