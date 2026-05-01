@@ -5,7 +5,10 @@ const isDev = process.env.NODE_ENV === 'development';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			pages: "docs",
+		    assets: "docs"
+		}),
 		paths: {
 			base: isDev ? '' : '/janeswalkmap'
 		},
